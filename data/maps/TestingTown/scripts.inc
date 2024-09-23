@@ -1,6 +1,36 @@
 TestingTown_MapScripts::
 	.byte 0
 
+TestingTown_EventScript_Nurse::
+	lock
+	faceplayer
+	msgbox TestingTown_Nurse_Text_Heal, MSGBOX_YESNO
+	goto_if_eq VAR_RESULT, YES, TestingTown_EventScript_NurseHeal
+	msgbox TestingTown_Nurse_RejectHeal, MSGBOX_DEFAULT
+    release
+	end
+
+TestingTown_EventScript_NurseHeal:
+	msgbox TestingTown_Nurse_Healing, MSGBOX_DEFAULT
+	closemessage
+	call Common_EventScript_OutOfCenterPartyHeal
+	msgbox TestingTown_Nurse_FinishHealing, MSGBOX_DEFAULT
+    release
+	end
+
+TestingTown_Nurse_Text_Heal:
+    .string "Would you like to be healed?$"
+
+TestingTown_Nurse_Healing:
+    .string "Ok, I'll heal your Pokemon.$"
+
+TestingTown_Nurse_FinishHealing:
+    .string "All done!\n"
+    .string "Your Pokemon are back to full health!$"
+
+TestingTown_Nurse_RejectHeal:
+    .string "Ok, come talk to me if you need healing.$"
+
 TestingTown_EventScript_TownSign::
 	msgbox LittlerootTown_Text_TownSign, MSGBOX_SIGN
 	end
@@ -27,7 +57,7 @@ TestingTown_EventScript_Flagged:
 
 TestingTown_EventScript_RemoveFlag:
     clearflag FLAG_FLAGGED_BY_TEST_SIGN
-    msgbox TestingTown_Text_Flagged_2
+    msgbox TestingTown_Text_Flagged_2, MSGBOX_SIGN
     end
 
 TestingTown_EventScript_RejectFlag:
