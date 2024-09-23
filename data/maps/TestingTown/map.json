@@ -97,7 +97,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 15,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_TESTING_FIELDS",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 
@@ -118,6 +124,22 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "TestingTown_EventScript_FlaggingSign"
+    },
+    {
+      "type": "hidden_item",
+      "x": 1,
+      "y": 9,
+      "elevation": 0,
+      "item": "ITEM_RARE_CANDY",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 8,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "TestingTown_EventScript_HiddenItem"
     }
   ],
   "allow_cycling": true,

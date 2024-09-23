@@ -1,6 +1,14 @@
 TestingTown_MapScripts::
 	.byte 0
 
+TestingTown_EventScript_HiddenItem::
+	msgbox TestingTown_Text_HiddenItem, MSGBOX_DEFAULT
+	end
+
+TestingTown_Text_HiddenItem:
+    .string "There is a Rare Candy below me.\n"
+    .string "It uses a TEMP FLAG$"
+
 TestingTown_EventScript_Nurse::
 	lock
 	faceplayer
