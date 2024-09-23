@@ -1562,10 +1562,27 @@
 #define FLAG_UNUSED_0x91E                           (SYSTEM_FLAGS + 0xBE) // Unused Flag
 #define FLAG_UNUSED_0x91F                           (SYSTEM_FLAGS + 0xBF) // Unused Flag
 
+#define FLAG_FLAGGED_BY_TEST_SIGN                   (SYSTEM_FLAGS + 0xC0)
+#define FLAG_NEW_FLAG1                              (SYSTEM_FLAGS + 0xC1)
+#define FLAG_NEW_FLAG2                              (SYSTEM_FLAGS + 0xC2)
+#define FLAG_NEW_FLAG3                              (SYSTEM_FLAGS + 0xC3)
+#define FLAG_NEW_FLAG4                              (SYSTEM_FLAGS + 0xC4)
+#define FLAG_NEW_FLAG5                              (SYSTEM_FLAGS + 0xC5)
+#define FLAG_NEW_FLAG6                              (SYSTEM_FLAGS + 0xC6)
+#define FLAG_NEW_FLAG7                              (SYSTEM_FLAGS + 0xC7)
+#define FLAG_NEW_FLAG8                              (SYSTEM_FLAGS + 0xC8)
+#define FLAG_NEW_FLAG9                              (SYSTEM_FLAGS + 0xC9)
+#define FLAG_NEW_FLAG10                             (SYSTEM_FLAGS + 0xCA)
+#define FLAG_NEW_FLAG11                             (SYSTEM_FLAGS + 0xCB)
+#define FLAG_NEW_FLAG12                             (SYSTEM_FLAGS + 0xCC)
+#define FLAG_NEW_FLAG13                             (SYSTEM_FLAGS + 0xCD)
+#define FLAG_NEW_FLAG14                             (SYSTEM_FLAGS + 0xCE)
+#define FLAG_NEW_FLAG15                             (SYSTEM_FLAGS + 0xCF)
+
 // Daily Flags
 // These flags are cleared once per day
 // The start and end are byte-aligned because the flags are cleared in byte increments
-#define DAILY_FLAGS_START                           (FLAG_UNUSED_0x91F + (8 - FLAG_UNUSED_0x91F % 8))
+#define DAILY_FLAGS_START                           (FLAG_NEW_FLAG15 + (8 - FLAG_NEW_FLAG15 % 8))
 #define FLAG_UNUSED_0x920                           (DAILY_FLAGS_START + 0x0)  // Unused Flag
 #define FLAG_DAILY_CONTEST_LOBBY_RECEIVED_BERRY     (DAILY_FLAGS_START + 0x1)
 #define FLAG_DAILY_SECRET_BASE                      (DAILY_FLAGS_START + 0x2)
