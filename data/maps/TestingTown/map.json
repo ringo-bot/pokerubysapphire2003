@@ -97,16 +97,18 @@
     }
   ],
   "warp_events": [
+
+  ],
+  "coord_events": [
     {
+      "type": "trigger",
       "x": 15,
       "y": 28,
       "elevation": 0,
-      "dest_map": "MAP_TESTING_FIELDS",
-      "dest_warp_id": "0"
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TestingTown_EventScript_WarpToTestingFields"
     }
-  ],
-  "coord_events": [
-
   ],
   "bg_events": [
     {

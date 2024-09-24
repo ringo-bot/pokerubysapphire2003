@@ -1,5 +1,15 @@
 TestingTown_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, TestingTown_OnLoad
 	.byte 0
+
+TestingTown_OnLoad:
+	end
+
+TestingTown_EventScript_WarpToTestingFields::
+    warp MAP_TESTING_FIELDS, 13, 1
+	waitstate
+	release
+	end
 
 TestingTown_EventScript_HiddenItem::
 	msgbox TestingTown_Text_HiddenItem, MSGBOX_DEFAULT
