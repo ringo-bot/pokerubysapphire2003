@@ -5,8 +5,56 @@ TestingTown_MapScripts::
 TestingTown_OnLoad:
 	end
 
+TestingTown_EventScript_CameraManMoveCamera::
+	lockall
+	delay 60
+	special SpawnCameraObject
+	applymovement OBJ_EVENT_ID_CAMERA, TestingTown_Movement_MapTour
+	waitmovement 0
+	special RemoveCameraObject
+	delay 60
+	releaseall
+	end
+
+TestingTown_Movement_MapTour:
+	walk_slow_diag_northwest
+	walk_slow_diag_northwest
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_left
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_right
+	walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+	walk_left
+	walk_left
+	walk_left
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+	step_end
+
 TestingTown_EventScript_WarpToTestingFields::
-    warp MAP_TESTING_FIELDS, 13, 1
+    warp MAP_TESTING_FIELDS, 13, 4
 	waitstate
 	release
 	end
