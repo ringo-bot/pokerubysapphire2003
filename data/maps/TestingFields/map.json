@@ -1,0 +1,36 @@
+{
+  "id": "MAP_TESTING_FIELDS",
+  "name": "TestingFields",
+  "layout": "LAYOUT_TESTING_FIELDS",
+  "music": "MUS_ROUTE101",
+  "region_map_section": "MAPSEC_TESTING_FIELDS",
+  "requires_flash": false,
+  "weather": "WEATHER_SHADE",
+  "map_type": "MAP_TYPE_ROUTE",
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 13,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "TestingFields_EventScript_WarpToTestingTown"
+    }
+  ],
+  "bg_events": [
+
+  ],
+  "allow_cycling": true,
+  "allow_escaping": false,
+  "allow_running": true
+}
