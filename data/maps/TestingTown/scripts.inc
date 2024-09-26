@@ -1,9 +1,69 @@
+.set LOCALID_NORMAN, 2
+.set LOCALID_WINGULL, 5
+.set LOCALID_CACNEA, 1
+
 TestingTown_MapScripts::
-	map_script MAP_SCRIPT_ON_LOAD, TestingTown_OnLoad
+	map_script MAP_SCRIPT_ON_TRANSITION, TestingTown_OnTransition
 	.byte 0
 
-TestingTown_OnLoad:
+TestingTown_OnTransition:
+    setflag FLAG_HIDE_NORMAN_POKEMON
+    setflag FLAG_HIDE_TEST
 	end
+
+TestingTown_EventScript_EventFlagTest::
+    msgbox TestingTown_Text_EventFlagTest, MSGBOX_SIGN
+    clearflag FLAG_HIDE_TEST
+    end
+
+TestingTown_Text_EventFlagTest:
+    .string "There is an object with an\n"
+    .string "event flag below me.\l"
+    .string "I will clear the flag now.$"
+
+TestingTown_EventScript_EventFlagObject::
+    msgbox TestingTown_Text_EventFlagObject, MSGBOX_DEFAULT
+    setflag FLAG_HIDE_TEST
+    closemessage
+    end
+
+TestingTown_Text_EventFlagObject:
+    .string "I have an event flag.\n"
+    .string "I will readd the flag now.$"
+
+TestingTown_EventScript_NormanBeatPokemon::
+    clearflag FLAG_HIDE_NORMAN_POKEMON    
+	setobjectxyperm LOCALID_WINGULL, 12, 16
+	setobjectxyperm LOCALID_CACNEA, 14, 16
+	setobjectmovementtype LOCALID_WINGULL, MOVEMENT_TYPE_FACE_UP
+	setobjectmovementtype LOCALID_CACNEA, MOVEMENT_TYPE_FACE_UP
+    lockall
+    applymovement LOCALID_NORMAN, TestingTown_Movement_NormanBeatWingull
+    waitmovement 0
+    removeobject LOCALID_WINGULL
+    applymovement LOCALID_NORMAN, TestingTown_Movement_NormanBeatCacnea
+    waitmovement 0
+    removeobject LOCALID_CACNEA
+    setflag FLAG_HIDE_NORMAN_POKEMON
+    delay 16
+    releaseall
+    end
+
+TestingTown_Movement_NormanBeatWingull:
+    walk_down
+    delay_16
+    step_end
+
+TestingTown_Movement_NormanBeatCacnea:
+    walk_left
+    walk_left
+    face_down
+    delay_16
+    walk_up
+    walk_right
+    walk_right
+    face_down
+    step_end
 
 TestingTown_EventScript_CameraManMoveCamera::
 	lockall

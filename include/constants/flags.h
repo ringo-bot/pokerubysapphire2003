@@ -1563,8 +1563,8 @@
 #define FLAG_UNUSED_0x91F                           (SYSTEM_FLAGS + 0xBF) // Unused Flag
 
 #define FLAG_FLAGGED_BY_TEST_SIGN                   (SYSTEM_FLAGS + 0xC0)
-#define FLAG_NEW_FLAG1                              (SYSTEM_FLAGS + 0xC1)
-#define FLAG_NEW_FLAG2                              (SYSTEM_FLAGS + 0xC2)
+#define FLAG_HIDE_NORMAN_POKEMON                    (SYSTEM_FLAGS + 0xC1)
+#define FLAG_HIDE_TEST                              (SYSTEM_FLAGS + 0xC2)
 #define FLAG_NEW_FLAG3                              (SYSTEM_FLAGS + 0xC3)
 #define FLAG_NEW_FLAG4                              (SYSTEM_FLAGS + 0xC4)
 #define FLAG_NEW_FLAG5                              (SYSTEM_FLAGS + 0xC5)
