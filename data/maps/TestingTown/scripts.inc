@@ -6,6 +6,25 @@ TestingTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, TestingTown_OnTransition
 	.byte 0
 
+TestingTown_EventScript_AddObjectTest::
+    msgbox TestingTown_Text_AddObjectTest, MSGBOX_SIGN
+    addobject 8
+    end
+
+TestingTown_Text_AddObjectTest:
+    .string "There is an object with an\n"
+    .string "event flag below me.\l"
+    .string "I will add that object to the map.$"
+
+TestingTown_EventScript_RemoveObjectTest::
+    msgbox TestingTown_Text_RemoveObjectTest, MSGBOX_DEFAULT
+    closemessage
+    removeobject 8
+    end
+
+TestingTown_Text_RemoveObjectTest:
+    .string "I will remove myself now.$"
+
 TestingTown_OnTransition:
     setflag FLAG_HIDE_NORMAN_POKEMON
     setflag FLAG_HIDE_TEST
@@ -33,10 +52,8 @@ TestingTown_Text_EventFlagObject:
 
 TestingTown_EventScript_NormanBeatPokemon::
     clearflag FLAG_HIDE_NORMAN_POKEMON    
-	setobjectxyperm LOCALID_WINGULL, 12, 16
-	setobjectxyperm LOCALID_CACNEA, 14, 16
-	setobjectmovementtype LOCALID_WINGULL, MOVEMENT_TYPE_FACE_UP
-	setobjectmovementtype LOCALID_CACNEA, MOVEMENT_TYPE_FACE_UP
+	addobject LOCALID_WINGULL
+	addobject LOCALID_CACNEA
     lockall
     applymovement LOCALID_NORMAN, TestingTown_Movement_NormanBeatWingull
     waitmovement 0
@@ -158,7 +175,7 @@ TestingTown_Nurse_RejectHeal:
     .string "Ok, come talk to me if you need healing.$"
 
 TestingTown_EventScript_TownSign::
-	msgbox LittlerootTown_Text_TownSign, MSGBOX_SIGN
+	msgbox TestingTown_Text_TownSign, MSGBOX_SIGN
 	end
 
 TestingTown_Text_TownSign:
