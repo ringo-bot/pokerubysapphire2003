@@ -1,0 +1,60 @@
+1.  
+In
+
+include/constants/region_map_sections.h
+
+add
+
+#define MAPSEC_XXX 0xAA
+
+after the latest map section
+
+2.
+In
+
+data/maps/XXX/map.json
+
+add
+
+"region_map_section":"MAPSEC_XXX"
+
+3. 
+Add the in-game name to 
+
+src/data/region_map/region_map_entries.h
+
+as
+
+static const u9 sMapName_XXX[] = _("XXX");
+
+Add the map to the in-game map by adding to 
+
+gRegionMapEntries
+
+as
+
+[MAPSEC_XXX] = {0, 0, 1, 1, sMapName_XXX},
+
+where the the first two digits are coordinates on the map. 
+
+4.
+Modify the popup style in 
+
+src/map_name_popup.c
+
+in 
+
+gRegionMapSectionId_To_PopUpThemeIdMapping
+
+as
+
+[MAPSEC_XXX - KANTO_MAPSEC_COUNT] = MAPPOPUP_THEME_WOOD,
+
+5.
+Add custom fields 
+
+allow_cycling
+allow_escaping
+allow_running
+
+in Porymap as Booleans

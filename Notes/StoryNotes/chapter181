@@ -1,0 +1,28 @@
+Norman fights Cacnea, Wingull, Volbeat, Beautifly, and Duskull
+    -> The platform is rocky
+    -> A cloud appears and we don't see his Pokemon
+
+Gabby and Ty interview Norman
+
+Cut to Mom driving the moving truck and Ruby in the back
+    -> Ruby has glasses
+    -> His Pokemon:
+        -> Ralts: Rara
+        -> Poochyena: Nana
+        -> Skitty: Kiki
+
+Truck gets stuck in mud and Mom tells Ruby to get outside and help. He refuses
+
+Ralts uses Confusion to move the truck. 
+
+Ruby opens back of truck to look at Hoenn. 
+
+------------------------------------------------------------------------------------
+
+-> Remove name choice 
+    -> Ruby is the boy
+    -> Sapphire is the girl
+
+-> Add overworld sprites for Pokemon (Done, from RHH Expansion)
+    -> OBJ_EVENT_GFX_SPECIES(X) 
+

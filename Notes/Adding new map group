@@ -1,0 +1,14 @@
+1.
+Add the new map group to
+
+data/maps/map_groups.json
+
+as 
+
+"gMapGroup_XXX": []
+
+2.
+Add the new map group to 
+
+group_order
+ 
