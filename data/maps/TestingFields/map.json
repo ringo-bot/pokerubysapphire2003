@@ -14,7 +14,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 2,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_CHAPTER181NORMAN_FIGHT",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
     {

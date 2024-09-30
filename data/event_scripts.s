@@ -1080,3 +1080,6 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/TestingFields/scripts.inc"
 	.include "data/maps/TestingFields/text.inc"
+
+	.include "data/maps/Chapter181NormanFight/scripts.inc"
+	.include "data/maps/Chapter181NormanFight/text.inc"

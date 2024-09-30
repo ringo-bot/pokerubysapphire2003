@@ -4430,6 +4430,16 @@
       "secondary_tileset": "gTileset_Fortree",
       "border_filepath": "data/layouts/TestingFields/border.bin",
       "blockdata_filepath": "data/layouts/TestingFields/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAPTER181NORMAN_FIGHT",
+      "name": "Chapter181NormanFight_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Cave",
+      "border_filepath": "data/layouts/Chapter181NormanFight/border.bin",
+      "blockdata_filepath": "data/layouts/Chapter181NormanFight/map.bin"
     }
   ]
 }
