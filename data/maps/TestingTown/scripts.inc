@@ -6,6 +6,24 @@ TestingTown_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, TestingTown_OnTransition
 	.byte 0
 
+TestingTown_OnTransition:
+    setflag FLAG_HIDE_NORMAN_POKEMON
+    setflag FLAG_HIDE_TEST
+	end
+
+TestingTown_EventScript_TestCameraWarp::
+	lockall
+    applymovement OBJ_EVENT_ID_PLAYER, TestingTown_Movement_HidePlayer
+    waitmovement 0
+    setvar VAR_TEMP_1, 0
+    warpsilent MAP_CHAPTER181NORMAN_FIGHT, 10, 10
+    waitstate
+	end
+
+TestingTown_Movement_HidePlayer:
+    set_invisible
+    step_end
+
 TestingTown_EventScript_AddObjectTest::
     msgbox TestingTown_Text_AddObjectTest, MSGBOX_SIGN
     addobject 8
@@ -24,11 +42,6 @@ TestingTown_EventScript_RemoveObjectTest::
 
 TestingTown_Text_RemoveObjectTest:
     .string "I will remove myself now.$"
-
-TestingTown_OnTransition:
-    setflag FLAG_HIDE_NORMAN_POKEMON
-    setflag FLAG_HIDE_TEST
-	end
 
 TestingTown_EventScript_EventFlagTest::
     msgbox TestingTown_Text_EventFlagTest, MSGBOX_SIGN

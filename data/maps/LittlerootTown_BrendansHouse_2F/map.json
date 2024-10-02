@@ -230,7 +230,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "ITEM_ESCAPE_ROPE",
       "script": "Common_EventScript_FindItem",
-      "flag": "FLAG_NEW_FLAG3"
+      "flag": "FLAG_RUBY_ESCAPEROPE"
     }
   ],
   "warp_events": [
