@@ -11,10 +11,41 @@ TestingTown_OnTransition:
     setflag FLAG_HIDE_TEST
 	end
 
+TestingTown_EventScript_WarpTrigger::
+    msgbox TestingTown_Text_WarpTrigger, MSGBOX_DEFAULT
+    closemessage
+    applymovement OBJ_EVENT_ID_PLAYER, TestingTown_Movement_WarpTrigger
+    end
+
+TestingTown_Movement_WarpTrigger:
+    walk_up
+    step_end
+
+TestingTown_Text_WarpTrigger:
+    .string "Hello, I cannot be activated\n"
+    .string "with a warp.$"
+
+TestingTown_EventScript_WarpToTrigger::
+    msgbox TestingTown_Text_WarpToTrigger, MSGBOX_YESNO
+    goto_if_eq VAR_RESULT, YES, TestingTown_EventScript_AcceptWarpTrigger
+    msgbox TestingTown_Text_RejectWarpTrigger, MSGBOX_SIGN
+    end
+
+TestingTown_Text_WarpToTrigger:
+    .string "Warp to trigger?$"
+
+TestingTown_Text_RejectWarpTrigger:
+    .string "Ok$"
+
+TestingTown_EventScript_AcceptWarpTrigger:
+    warp MAP_TESTING_TOWN, 4, 6
+    end
+
 TestingTown_EventScript_TestCameraWarp::
 	lockall
     applymovement OBJ_EVENT_ID_PLAYER, TestingTown_Movement_HidePlayer
     waitmovement 0
+	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_TESTING_TOWN, 0
     setvar VAR_TEMP_1, 0
     warpsilent MAP_CHAPTER181NORMAN_FIGHT, 10, 10
     waitstate
