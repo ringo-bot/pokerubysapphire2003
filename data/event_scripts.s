@@ -1083,3 +1083,9 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/Chapter181NormanFight/scripts.inc"
 	.include "data/maps/Chapter181NormanFight/text.inc"
+
+	.include "data/maps/Chapter181TruckStuckInterior/scripts.inc"
+	.include "data/maps/Chapter181TruckStuckInterior/text.inc"
+
+	.include "data/maps/Chapter181TruckStuckExterior/scripts.inc"
+	.include "data/maps/Chapter181TruckStuckExterior/text.inc"

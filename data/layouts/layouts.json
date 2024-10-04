@@ -4440,6 +4440,26 @@
       "secondary_tileset": "gTileset_Cave",
       "border_filepath": "data/layouts/Chapter181NormanFight/border.bin",
       "blockdata_filepath": "data/layouts/Chapter181NormanFight/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAPTER181TRUCK_STUCK_INTERIOR",
+      "name": "Chapter181TruckStuckInterior_Layout",
+      "width": 5,
+      "height": 5,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_InsideOfTruck",
+      "border_filepath": "data/layouts/Chapter181TruckStuckInterior/border.bin",
+      "blockdata_filepath": "data/layouts/Chapter181TruckStuckInterior/map.bin"
+    },
+    {
+      "id": "LAYOUT_CHAPTER181TRUCK_STUCK_EXTERIOR",
+      "name": "Chapter181TruckStuckExterior_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Chapter181TruckStuckExterior/border.bin",
+      "blockdata_filepath": "data/layouts/Chapter181TruckStuckExterior/map.bin"
     }
   ]
 }
