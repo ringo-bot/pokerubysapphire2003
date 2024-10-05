@@ -31,3 +31,7 @@ Ruby opens back of truck to look at Hoenn.
         -> ON_FRAME gets checked first, so make sure it does not fire straight away with CUTSCENE_STATE 0
         -> Use ON_WARP or ON_TRANSITION to call the setup and set the CUTSCENE_STATE to 1
         -> Now the frame after the setup is finished, ON_FRAME will fire the animation
+    * turns out this is basically what was done in VerdanturfTown_BattleTentBattleRoom_MapScripts, not sure whats the difference between applying the set_invisible movement vs hideobject though
+
+-> For the truck animation, will have to use Task_HandleTruckSequence or figure out a way to use the gFieldCallback
+
