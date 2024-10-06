@@ -274,7 +274,19 @@
 #define VAR_UNUSED_0x40FE                                0x40FE // Unused Var
 #define VAR_UNUSED_0x40FF                                0x40FF // Unused Var
 
-#define VARS_END                                         0x40FF
+#define VAR_CHAPTER181_CUTSCENE_STATE                    0x4100
+#define VAR_NEW_2                                        0x4101
+#define VAR_NEW_3                                        0x4102
+#define VAR_NEW_4                                        0x4103
+#define VAR_NEW_5                                        0x4104
+#define VAR_NEW_6                                        0x4105
+#define VAR_NEW_7                                        0x4106
+#define VAR_NEW_8                                        0x4107
+#define VAR_NEW_9                                        0x4108
+#define VAR_NEW_10                                       0x4109
+#define VAR_NEW_11                                       0x410A
+
+#define VARS_END                                         0x410A
 #define VARS_COUNT                                       (VARS_END - VARS_START + 1)
 
 #define SPECIAL_VARS_START            0x8000

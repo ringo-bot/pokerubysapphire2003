@@ -54,7 +54,7 @@ TestingTown_EventScript_TestCameraWarp::
     applymovement OBJ_EVENT_ID_PLAYER, TestingTown_Movement_HidePlayer
     waitmovement 0
 	setobjectsubpriority OBJ_EVENT_ID_PLAYER, MAP_TESTING_TOWN, 0
-    setvar VAR_TEMP_1, 0
+    setvar VAR_CHAPTER181_CUTSCENE_STATE, 0
     warpsilent MAP_CHAPTER181NORMAN_FIGHT, 10, 10
     waitstate
 	end
