@@ -11,6 +11,14 @@ TestingTown_OnTransition:
     setflag FLAG_HIDE_TEST
 	end
 
+TestingTown_EventScript_WarpSapphireCaveInside::
+	lockall
+    applymovement OBJ_EVENT_ID_PLAYER, TestingTown_Movement_HidePlayer
+    waitmovement 0
+    warpsilent MAP_SECRET_BASE_SAPPHIRE_CAVE
+    waitstate
+	end
+
 TestingTown_EventScript_WarpTruckStuck::
 	lockall
     applymovement OBJ_EVENT_ID_PLAYER, TestingTown_Movement_HidePlayer

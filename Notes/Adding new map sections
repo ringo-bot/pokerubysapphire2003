@@ -9,6 +9,8 @@ add
 
 after the latest map section
 
+Also update region_map_sections.json with the entry if you are adding it to the region map 
+
 2.
 In
 
@@ -58,3 +60,5 @@ allow_escaping
 allow_running
 
 in Porymap as Booleans
+
+* If changing the name of a map, also change the references in layouts.json, map_groups.json, and event_scripts.s

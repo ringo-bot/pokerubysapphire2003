@@ -19,7 +19,7 @@ Ruby opens back of truck to look at Hoenn.
 
 ------------------------------------------------------------------------------------
 
--> Remove name choice 
+-> Remove name choice?
     -> Ruby is the boy
     -> Sapphire is the girl
 
@@ -34,4 +34,8 @@ Ruby opens back of truck to look at Hoenn.
     * turns out this is basically what was done in VerdanturfTown_BattleTentBattleRoom_MapScripts, not sure whats the difference between applying the set_invisible movement vs hideobject though
 
 -> For the truck animation, will have to use Task_HandleTruckSequence or figure out a way to use the gFieldCallback
+    -> used the ExecuteTruckSequence with callnative. Also looking into special for adding C tasks
+
+-> Will have to replace the WarpToTruck() when starting a new game. Can just change the teleport location
+
 

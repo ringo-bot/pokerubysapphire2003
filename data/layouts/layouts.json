@@ -4460,6 +4460,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Chapter181TruckStuckExterior/border.bin",
       "blockdata_filepath": "data/layouts/Chapter181TruckStuckExterior/map.bin"
+    },
+    {
+      "id": "LAYOUT_SAPPHIRE_CAVE",
+      "name": "SapphireCave_Layout",
+      "width": 27,
+      "height": 21,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/SapphireCave/border.bin",
+      "blockdata_filepath": "data/layouts/SapphireCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_SECRET_BASE_SAPPHIRE_CAVE",
+      "name": "SecretBase_SapphireCave_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_SecretBase",
+      "secondary_tileset": "gTileset_SecretBaseBlueCave",
+      "border_filepath": "data/layouts/SecretBase_SapphireCave/border.bin",
+      "blockdata_filepath": "data/layouts/SecretBase_SapphireCave/map.bin"
     }
   ]
 }

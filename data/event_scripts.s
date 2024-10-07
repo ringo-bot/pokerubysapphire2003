@@ -1089,3 +1089,9 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/Chapter181TruckStuckExterior/scripts.inc"
 	.include "data/maps/Chapter181TruckStuckExterior/text.inc"
+
+	.include "data/maps/SapphireCave/scripts.inc"
+	.include "data/maps/SapphireCave/text.inc"
+
+	.include "data/maps/SecretBase_SapphireCave/scripts.inc"
+	.include "data/maps/SecretBase_SapphireCave/text.inc"
