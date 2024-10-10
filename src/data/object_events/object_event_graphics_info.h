@@ -4689,3 +4689,21 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Example = {
     .images = gObjectEventPicTable_Example,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
+
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_SapphireShrub = { 
+    .tileTag = 0xFFFF,
+    .paletteTag = OBJ_EVENT_PAL_SAPPHIRESHRUB,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE,
+    .size = 512,
+    .width = 16,
+    .height = 32,
+    .paletteSlot = 7,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_16x32,
+    .subspriteTables = sOamTables_16x32,
+    .anims = sAnimTable_Standard,
+    .images = gObjectEventPicTable_SapphireShrub,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};

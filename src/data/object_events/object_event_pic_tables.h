@@ -1367,3 +1367,7 @@ const struct SpriteFrameImage gObjectEventPicTable_Example[] = {
     overworld_frame(gObjectEventPic_Example, 4, 4, 7),
     overworld_frame(gObjectEventPic_Example, 4, 4, 8),
 };
+
+const struct SpriteFrameImage gObjectEventPicTable_SapphireShrub[] = {
+    overworld_ascending_frames(gObjectEventPic_SapphireShrub, 2, 4),
+};

@@ -457,3 +457,6 @@ const u16 gObjectEventPal_StrangeBall[] = INCBIN_U16("graphics/object_events/pic
 
 const u32 gObjectEventPic_Example[] = INCBIN_U32("graphics/object_events/pics/testing/example.4bpp");
 const u16 gObjectEventPalette_Example[] = INCBIN_U16("graphics/object_events/pics/testing/example.gbapal");
+
+const u32 gObjectEventPic_SapphireShrub[] = INCBIN_U32("graphics/object_events/pics/testing/SapphireShrub.4bpp");
+const u16 gObjectEventPalette_SapphireShrub[] = INCBIN_U16("graphics/object_events/pics/testing/SapphireShrub.gbapal");
