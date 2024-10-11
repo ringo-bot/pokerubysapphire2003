@@ -1,0 +1,41 @@
+{
+  "id": "MAP_SECRET_BASE_SAPPHIRE_CAVE",
+  "name": "SecretBase_SapphireCave",
+  "layout": "LAYOUT_SECRET_BASE_SAPPHIRE_CAVE",
+  "music": "MUS_DUMMY",
+  "region_map_section": "MAPSEC_SAPPHIRE_CAVE",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "show_map_name": true,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 17,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_SAPPHIRE_CAVE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 2,
+      "y": 3,
+      "elevation": 0,
+      "dest_map": "MAP_SAPPHIRE_CAVE",
+      "dest_warp_id": "1"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ],
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true
+}

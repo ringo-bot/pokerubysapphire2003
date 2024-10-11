@@ -1,0 +1,7 @@
+1. Add a pokeball to the map
+
+2. The Sight Radius/Berry Tree ID field should be filled in with the desired item. Items can be found in data/items.h
+
+3. The Movement Radius X should be filled in with the desired quantity (0 = 1)
+
+4. Add a flag to the object

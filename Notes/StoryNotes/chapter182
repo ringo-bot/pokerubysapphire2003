@@ -1,0 +1,44 @@
+Birch is doing fieldwork, looking at a Wurmple on a tree
+    -> It evolves into a Silcoon instead of a Cascoon
+    -> Gets a call from Norman about the gym appointment and family moving in
+    -> Mightyenas sneak up on him
+
+At home, Ruby is unpacking
+    -> Throws running shoes from Dad into trash 
+    -> He retrieves the shoes then runs away and encounters Birch
+    -> Dodges and admires the Mightyena attacks before runnning away
+    -> His rocket shoes send him off a cliff
+
+Ruby gets saved by a "pokemon" covered in grass before passing out
+    -> Nana licks him then he Wakes up and gets a call from Birch
+    -> The "pokemon" talks to Ruby and suprises him; it gets bite by Nana
+    -> The "pokemon" is Sapphire and her Torchic, Chic
+
+--------------------------------------------------------------------------------------------
+
+-> Theres definitely no sprite for the wild Sapphire design in Emerald 
+    -> Will learn how to create and add custom sprites
+    -> Also need to add metatiles/new tilesets
+
+-> Should the Rocket shoes be different from Running shoes?
+    -> Similar to a dash ability?
+
+-> Previously added an escape rope to Brendans room
+    -> Set the escape rope warp to behind his house?
+    -> Instead of escape rope, have an event at the window?
+    -> Should have the shoes in the trash as a pickup
+
+-> "Floating" and "Falling" animations?
+    -> needed for the truck last chapter and in this one
+    -> "Falling" has something similar in the Desert Tower
+    -> "Floating" ?
+
+-> Will have to add a Cave area somewhere near the start of the game
+    -> Where/How far do Birch and Ruby get chased?
+    -> In the next few chapters, Ruby passes Route 101 to get to Oldale Town
+        -> This leaves only space to add something to the right or left of Route 101
+        -> How are cliffs supposed to be mapped?
+
+-> New area should be partially Mightyena territory 
+    -> Grass: Mightyena, Seviper
+
