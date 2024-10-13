@@ -1,0 +1,89 @@
+notes about tutorial found on Pret wiki
+
+- a tile is 8x8 pixels
+- 4bpp = 4 bits per pixel = 16 colour palette
+
+1. Image format:
+    - the image should be a png with bit depth 4 (16 colours)
+    - the first colour is the transparent background
+    - widthand height are multiples of 8 (per tile)
+    - the poses generally go: face down, face up, face left, walk down x2, walk up x2, walk left x2
+    - most graphics are found in graphics/object_events/pics
+    - emerald characters are usually 2x4 tiles (16 x 32 pixels, Width x Height), with the actual character being ~20 
+      pixels tall, ~12 pixels wide, floating one pixel up from the bottom if standing still, and having one foot touching
+      the bottom if walking
+
+2. Adding image:
+    - add the label to src/data/object_events/object_events_graphics.h as
+        const u32 gObjectEventPic_Example[] = INCBIN_U32("graphics/.../example.4bpp");
+    - a palette can also be added as a .pal (more info in metatile tutorial?) or generated from the .png as
+        const u16 gObjectEventPalette_Example[] = INCBIN_U16("graphics/.../example.gbapal");
+    - add the build rules in spritesheet_rules.mk as
+        $(OBJEVENTGFXDIR)/.../example.4bpp: %.4bpp: %.png
+            $(GFX) $< $@ -mwidth 4 -mheight 4
+      mwidth and mheight are one frame of the sprite sheet in tiles
+
+3. Adding new palette:
+    - add the reference to event_objects.h as
+        #define OBJ_EVENT_PAL_EXAMPLE 0x11XX
+      *it looks like the Emerald expansion has the define moved to event_objects instead of event_object_movement normally
+    - add to event_object_movement.c in sObjectEventSpritePalettes[]
+        {gObjectEventPalette_Example, OBJ_EVENT_PAL_EXAMPLE},
+    - this step is not needed is using an existing palette (how to use an existing palette?)
+
+4. Adding pic table: 
+    - add to src/data/object_events/object_event_pic_tables.h with macro overworld_frame(ptr, width, height, frame)
+        const struct SpriteFrameImage gObjectEventPicTable_Example[] = {
+            overworld_frame(gObjectEventPic_Example, 4, 4, 0),
+            ...
+            overworld_frame(gObjectEventPic_Example, 4, 4, 8),
+        };
+    - this depends on the order of the frames and the animation you want to use
+    - there is also a macro overworld_ascending_frames(ptr, width, height) which does exactly what the name describes
+    - the protagonists use a NormalRunning pic table, so it seems like it is possible to add two images together
+
+5. Adding ObjectEventGraphicsInfo entry:
+    - in object_event_graphics_info.h add
+        const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Example = {
+            .tileTag = 0xFFFF, // always 0xFFFF
+            .paletteTag = OBJ_EVENT_PAL_EXAMPLE, // standard overworld palette
+            .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NONE, // for reflections, typically NONE
+            .size = 512, // size in bytes of 1 frame in overworld, equal to width x height x bit depth = bits / 8 = bytes
+            .width = 32, // width and height in pixels of 1 frame
+            .height = 32, //  palette 0 = player, 2-5 = overworld, 6-9 = reflection, 10-11 = special objects (rival +
+            .paletteSlot = 0, // legendaries), 12-15 = screen effects, not sure if this is accurate in Emerald Expansion
+            .shadowsize = SHADOW_SIZE_M, // size of shadow when e.g. jumping a ledge
+            .inanimate = FALSE, // for dolls, cushions, etc. 
+            //.disableReflectionPaletteLoad = False, // disables reflections for surfing/underwater, was removed?
+            .tracks = TRACKS_FOOT, // for sand and other
+            .oam = &gObjectEventBaseOam_32x32, // in base_oam.h, can ajdust the size (pixels)
+            .subspriteTables = sOamTables_16x32, // in object_event_subsprites.h, can adjust size (pixels)
+            .anims = sAnimTable_Standard, // in object_event_anims.h, Standard is for walking
+            .images = sPicTable_Example, // created pic table
+            .affineAnims = gDummySpriteAffineAnimTable // for rotation and scale (for legendaries?)
+        };
+    - add pointer to object_event_graphics_info_pointers.h as declaration
+        const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Example;
+      into (first) table
+        [OBJ_EVENT_GFX_EXAMPLE] = &gObjectEventGraphicsInfo_Example,
+    
+6. Adding define to Overworld:
+    - add to event_objects.h, before NUM_OBJ_EVENT_GFX
+        #define OBJ_EVENT_GFX_EXAMPLE   XXX
+    - update NUM_OBJ_EVENT_GFX
+    - Emerald expansion increased object limit to ~65536
+
+* looks like animations are handled with ANIMCMD_FRAME which can be found in sprite, used in object_event_anims
+  still not sure exactly what it does
+
+
+
+
+
+
+
+
+
+
+
+
