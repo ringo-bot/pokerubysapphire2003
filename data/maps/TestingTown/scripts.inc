@@ -15,7 +15,7 @@ TestingTown_EventScript_WarpSapphireCaveInside::
 	lockall
     applymovement OBJ_EVENT_ID_PLAYER, TestingTown_Movement_HidePlayer
     waitmovement 0
-    warpsilent MAP_SECRET_BASE_SAPPHIRE_CAVE
+    warpsilent MAP_SECRET_BASE_SAPPHIRE_CAVE, 9, 9
     waitstate
 	end
 

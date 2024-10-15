@@ -1713,6 +1713,14 @@
       "height": 1
     },
     {
+      "map_section": "MAPSEC_TESTING_FIELDS",
+      "name": "TESTING FIELDS",
+      "x": 0,
+      "y": 0,
+      "width": 1,
+      "height": 1
+    },
+    {
       "map_section": "MAPSEC_SAPPHIRE_CAVE",
       "name": "SAPPHIRE CAVE",
       "x": 5,
