@@ -20,6 +20,20 @@
       "elevation": 0,
       "dest_map": "MAP_CHAPTER181NORMAN_FIGHT",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_CHAPTER181TRUCK_STUCK_INTERIOR",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 6,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_CHAPTER181TRUCK_STUCK_EXTERIOR",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
