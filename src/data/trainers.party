@@ -16873,3 +16873,28 @@ Double Battle: No
 Kyogre
 Level: 5
 IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+
+=== TRAINER_TEST ===
+Name: TEST
+Class: Rival
+Pic: May
+Gender: Female
+Music: Female
+Double Battle: No
+Items: Potion / Potion
+Mugshot: Pink
+Starting Status: STARTING_STATUS_TAILWIND_OPPONENT
+AI: Check Bad Move / Try To Faint / Check Viability
+
+Chic (Torchic) (F) @ Oran Berry
+Level: 5
+Ability: Speed Boost
+IVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+EVs: 0 HP / 0 Atk / 0 Def / 0 SpA / 0 SpD / 0 Spe
+Ball: Poke Ball
+Happiness: 128
+Nature: Rash
+Shiny: No
+- Ember
+- Tackle
+- Growl

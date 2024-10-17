@@ -1,3 +1,15 @@
+TestingTown_Text_TestIntro:
+	.string "This is the test text intro\n"
+    .string "found in trainers.inc$"
+
+TestingTown_Text_TestDefeated:	
+    .string "This is the test text defeated\n"
+    .string "found in trainers.inc$"
+
+TestingTown_Text_TestPostBattle:	
+    .string "This is the test text post battle\n"
+    .string "found in trainers.inc$"
+
 Route102_Text_CalvinIntro:
 	.string "If you have POKéMON with you, then\n"
 	.string "you're an official POKéMON TRAINER!\l"

@@ -11,6 +11,11 @@ TestingTown_OnTransition:
     setflag FLAG_HIDE_TEST
 	end
 
+TestingTown_EventScript_TrainerTest::
+	trainerbattle_single TRAINER_TEST, TestingTown_Text_TestIntro, TestingTown_Text_TestDefeated
+	msgbox TestingTown_Text_TestPostBattle, MSGBOX_AUTOCLOSE
+	end
+
 TestingTown_EventScript_WarpSapphireCaveInside::
 	lockall
     applymovement OBJ_EVENT_ID_PLAYER, TestingTown_Movement_HidePlayer

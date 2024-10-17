@@ -42183,3 +42183,66 @@ F_TRAINER_FEMALE |
             },
         },
     },
+#line 16877
+    [TRAINER_TEST] =
+    {
+#line 16878
+        .trainerName = _("TEST"),
+#line 16879
+        .trainerClass = TRAINER_CLASS_RIVAL,
+#line 16880
+        .trainerPic = TRAINER_PIC_MAY,
+        .encounterMusic_gender = 
+#line 16881
+F_TRAINER_FEMALE | 
+#line 16882
+            TRAINER_ENCOUNTER_MUSIC_FEMALE,
+#line 16884
+        .items = { ITEM_POTION, ITEM_POTION },
+#line 16883
+        .doubleBattle = FALSE,
+#line 16887
+        .aiFlags = AI_FLAG_CHECK_BAD_MOVE | AI_FLAG_TRY_TO_FAINT | AI_FLAG_CHECK_VIABILITY,
+#line 16885
+        .mugshotEnabled = TRUE,
+        .mugshotColor = MUGSHOT_COLOR_PINK,
+#line 16886
+        .startingStatus = STARTING_STATUS_TAILWIND_OPPONENT,
+        .partySize = 1,
+        .party = (const struct TrainerMon[])
+        {
+            {
+#line 16889
+            .nickname = COMPOUND_STRING("Chic"),
+#line 16889
+            .species = SPECIES_TORCHIC,
+#line 16889
+            .gender = TRAINER_MON_FEMALE,
+#line 16889
+            .heldItem = ITEM_ORAN_BERRY,
+#line 16893
+            .ev = TRAINER_PARTY_EVS(0, 0, 0, 0, 0, 0),
+#line 16892
+            .iv = TRAINER_PARTY_IVS(0, 0, 0, 0, 0, 0),
+#line 16891
+            .ability = ABILITY_SPEED_BOOST,
+#line 16890
+            .lvl = 5,
+#line 16894
+            .ball = ITEM_POKE_BALL,
+#line 16895
+            .friendship = 128,
+#line 16896
+            .nature = NATURE_RASH,
+#line 16897
+            .isShiny = FALSE,
+            .dynamaxLevel = MAX_DYNAMAX_LEVEL,
+            .moves = {
+#line 16898
+                MOVE_EMBER,
+                MOVE_TACKLE,
+                MOVE_GROWL,
+            },
+            },
+        },
+    },
