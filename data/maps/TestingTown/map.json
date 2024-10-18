@@ -136,8 +136,8 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_SAPPHIRESHRUB",
-      "x": 11,
-      "y": 9,
+      "x": 26,
+      "y": 15,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 7,

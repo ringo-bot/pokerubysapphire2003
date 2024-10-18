@@ -45,6 +45,13 @@
       "elevation": 0,
       "dest_map": "MAP_CHAPTER181TRUCK_STUCK_INTERIOR",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 18,
+      "y": 17,
+      "elevation": 0,
+      "dest_map": "MAP_TESTING_FIELDS",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

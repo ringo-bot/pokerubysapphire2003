@@ -178,3 +178,10 @@ Chapter181NormanFight_Movement_Test:
     walk_left
     walk_down
     step_end
+
+Chapter181NormanFight_EventScript_WarpSign::
+	msgbox Chapter181NormanFight_Text_WarpSign, MSGBOX_SIGN
+	end
+
+Chapter181NormanFight_Text_WarpSign:
+	.string "Talk to Norman to play scene$"

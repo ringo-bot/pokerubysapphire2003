@@ -16,7 +16,17 @@ TestingTown_EventScript_TrainerTest::
 	msgbox TestingTown_Text_TestPostBattle, MSGBOX_AUTOCLOSE
 	end
 
+TestingTown_EventScript_NoWarp::
+    msgbox TestingTown_Text_NoWarp, MSGBOX_SIGN
+    end
+
+TestingTown_Text_NoWarp:
+    .string "Not warping anywhere$"
+
 TestingTown_EventScript_WarpSapphireCaveInside::
+    msgbox TestingTown_Text_WarpSapphireCave, MSGBOX_YESNO
+    compare VAR_RESULT, 0
+    goto_if_eq TestingTown_EventScript_NoWarp
 	lockall
     applymovement OBJ_EVENT_ID_PLAYER, TestingTown_Movement_HidePlayer
     waitmovement 0
@@ -24,13 +34,22 @@ TestingTown_EventScript_WarpSapphireCaveInside::
     waitstate
 	end
 
+TestingTown_Text_WarpSapphireCave:
+    .string "Warp to Sapphire Cave?$"
+
 TestingTown_EventScript_WarpTruckStuck::
+    msgbox TestingTown_Text_WarpTruckStuck, MSGBOX_YESNO
+    compare VAR_RESULT, 0
+    goto_if_eq TestingTown_EventScript_NoWarp
 	lockall
     applymovement OBJ_EVENT_ID_PLAYER, TestingTown_Movement_HidePlayer
     waitmovement 0
     warpsilent MAP_CHAPTER181TRUCK_STUCK_INTERIOR, 2, 1
     waitstate
 	end
+
+TestingTown_Text_WarpTruckStuck:
+    .string "Warp to Moving Truck Interior?$"
 
 TestingTown_EventScript_WarpTrigger::
     msgbox TestingTown_Text_WarpTrigger, MSGBOX_DEFAULT
@@ -63,6 +82,9 @@ TestingTown_EventScript_AcceptWarpTrigger:
     end
 
 TestingTown_EventScript_TestCameraWarp::
+    msgbox TestingTown_Text_TestCameraWarp, MSGBOX_YESNO
+    compare VAR_RESULT, 0
+    goto_if_eq TestingTown_EventScript_NoWarp
 	lockall
     applymovement OBJ_EVENT_ID_PLAYER, TestingTown_Movement_HidePlayer
     waitmovement 0
@@ -71,6 +93,9 @@ TestingTown_EventScript_TestCameraWarp::
     warpsilent MAP_CHAPTER181NORMAN_FIGHT, 10, 10
     waitstate
 	end
+
+TestingTown_Text_TestCameraWarp:
+    .string "Play intro cutscene?$"
 
 TestingTown_Movement_HidePlayer:
     set_invisible

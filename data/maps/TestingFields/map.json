@@ -33,7 +33,7 @@
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_CHAPTER181TRUCK_STUCK_EXTERIOR",
-      "dest_warp_id": "0"
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
@@ -48,7 +48,38 @@
     }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 1,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "TestingFields_EventScript_WarpSign1"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "TestingFields_EventScript_WarpSign2"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "TestingFields_EventScript_WarpSign3"
+    },
+    {
+      "type": "sign",
+      "x": 7,
+      "y": 6,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "NULL"
+    }
   ],
   "allow_cycling": true,
   "allow_escaping": false,
