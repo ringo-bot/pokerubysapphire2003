@@ -1,9 +1,9 @@
 {
-  "id": "MAP_SAPPHIRE_CAVE",
-  "name": "SapphireCave",
-  "layout": "LAYOUT_SAPPHIRE_CAVE",
+  "id": "MAP_ROUTE103RIVER",
+  "name": "Route103River",
+  "layout": "LAYOUT_ROUTE103RIVER",
   "music": "MUS_ROUTE101",
-  "region_map_section": "MAPSEC_SAPPHIRE_CAVE",
+  "region_map_section": "MAPSEC_ROUTE_103",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_ROUTE",
@@ -11,23 +11,41 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_ROUTE101",
+      "map": "MAP_ROUTE103",
+      "offset": -24,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_OLDALE_TOWN",
       "offset": 0,
       "direction": "left"
     },
     {
-      "map": "MAP_ROUTE103RIVER",
+      "map": "MAP_SAPPHIRE_CAVE",
       "offset": 0,
-      "direction": "up"
+      "direction": "down"
     }
   ],
   "object_events": [
     {
       "graphics_id": "OBJ_EVENT_GFX_SAPPHIRESHRUB",
-      "x": 12,
+      "x": 33,
       "y": 9,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_SAPPHIRESHRUB",
+      "x": 33,
+      "y": 17,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -37,20 +55,7 @@
     }
   ],
   "warp_events": [
-    {
-      "x": 11,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_SECRET_BASE_SAPPHIRE_CAVE",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 7,
-      "y": 4,
-      "elevation": 0,
-      "dest_map": "MAP_SECRET_BASE_SAPPHIRE_CAVE",
-      "dest_warp_id": "1"
-    }
+
   ],
   "coord_events": [
 

@@ -1653,3 +1653,22 @@ const u16 gTilesetPalettes_Testing[][16] =
 };
 
 const u32 gTilesetTiles_Testing[] = INCBIN_U32("data/tilesets/primary/testing/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_TestingSecondary[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/testing_secondary/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_TestingSecondary[] = INCBIN_U32("data/tilesets/secondary/testing_secondary/tiles.4bpp.lz");

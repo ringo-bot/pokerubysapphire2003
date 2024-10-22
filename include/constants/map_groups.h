@@ -65,6 +65,7 @@
 #define MAP_UNDERWATER_ROUTE125 (56 | (0 << 8))
 #define MAP_TESTING_TOWN        (57 | (0 << 8))
 #define MAP_SAPPHIRE_CAVE       (58 | (0 << 8))
+#define MAP_ROUTE103RIVER       (59 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

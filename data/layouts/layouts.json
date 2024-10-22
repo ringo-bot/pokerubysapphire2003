@@ -107,7 +107,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_TestingSecondary",
       "border_filepath": "data/layouts/OldaleTown/border.bin",
       "blockdata_filepath": "data/layouts/OldaleTown/map.bin"
     },
@@ -167,7 +167,7 @@
       "width": 20,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_TestingSecondary",
       "border_filepath": "data/layouts/Route101/border.bin",
       "blockdata_filepath": "data/layouts/Route101/map.bin"
     },
@@ -4480,6 +4480,16 @@
       "secondary_tileset": "gTileset_SecretBaseBlueCave",
       "border_filepath": "data/layouts/SecretBase_SapphireCave/border.bin",
       "blockdata_filepath": "data/layouts/SecretBase_SapphireCave/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE103RIVER",
+      "name": "Route103River_Layout",
+      "width": 40,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/Route103River/border.bin",
+      "blockdata_filepath": "data/layouts/Route103River/map.bin"
     }
   ]
 }

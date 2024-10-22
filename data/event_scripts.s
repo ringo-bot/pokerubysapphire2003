@@ -1095,3 +1095,6 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/SecretBase_SapphireCave/scripts.inc"
 	.include "data/maps/SecretBase_SapphireCave/text.inc"
+
+	.include "data/maps/Route103River/scripts.inc"
+	.include "data/maps/Route103River/text.inc"
