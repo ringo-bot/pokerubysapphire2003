@@ -96,7 +96,9 @@
     "Underwater_Route125",
     "TestingTown",
     "SapphireCave",
-    "Route103River"
+    "Route103River",
+    "Route102River",
+    "PetalburgRiver"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",

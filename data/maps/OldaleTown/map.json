@@ -29,6 +29,11 @@
       "map": "MAP_ROUTE103RIVER",
       "offset": 0,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTE102RIVER",
+      "offset": 20,
+      "direction": "left"
     }
   ],
   "object_events": [

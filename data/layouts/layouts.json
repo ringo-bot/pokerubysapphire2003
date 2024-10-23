@@ -177,7 +177,7 @@
       "width": 50,
       "height": 20,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_TestingSecondary",
       "border_filepath": "data/layouts/Route102/border.bin",
       "blockdata_filepath": "data/layouts/Route102/map.bin"
     },
@@ -4490,6 +4490,26 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/Route103River/border.bin",
       "blockdata_filepath": "data/layouts/Route103River/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTE102RIVER",
+      "name": "Route102River_Layout",
+      "width": 50,
+      "height": 20,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_TestingSecondary",
+      "border_filepath": "data/layouts/Route102River/border.bin",
+      "blockdata_filepath": "data/layouts/Route102River/map.bin"
+    },
+    {
+      "id": "LAYOUT_PETALBURG_RIVER",
+      "name": "PetalburgRiver_Layout",
+      "width": 30,
+      "height": 25,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/PetalburgRiver/border.bin",
+      "blockdata_filepath": "data/layouts/PetalburgRiver/map.bin"
     }
   ]
 }

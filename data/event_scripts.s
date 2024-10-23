@@ -1098,3 +1098,9 @@ EventScript_VsSeekerChargingDone::
 
 	.include "data/maps/Route103River/scripts.inc"
 	.include "data/maps/Route103River/text.inc"
+
+	.include "data/maps/Route102River/scripts.inc"
+	.include "data/maps/Route102River/text.inc"
+
+	.include "data/maps/PetalburgRiver/scripts.inc"
+	.include "data/maps/PetalburgRiver/text.inc"
